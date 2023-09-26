@@ -19,12 +19,13 @@ const library = [
 const numberOfBooksRead = () => {
   // write your code here
 	let cnt = 0;
-	library.forEach((ele)=>{
-		if(ele.readingStatus){
-			cnt++;
+	for (let i = 0; i < library.length; i++) {
+		if(library[i].readingStatus == true){
+			cnt++; 
 		}
-	});
+	}
 	return cnt;
+	
 };
 
 // Do not change the code below
